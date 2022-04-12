@@ -1,0 +1,52 @@
+.app {
+  background-color: #dde7f1;
+  min-height: 580px;
+  width: 400px;
+  margin: 40px auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.user-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+button {
+  cursor: pointer;
+}
+
+/* .logoutBtn{
+  margin-top: -510px;
+  margin-left: 900px;
+} */
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.user_details{
+  margin: 30px auto;
+}
+
+.user_card{
+  margin: 30px auto;
+}
+
+.file{
+  width: 360px;
+  margin-left: -12px;
+  margin-bottom: 20px;
+}
