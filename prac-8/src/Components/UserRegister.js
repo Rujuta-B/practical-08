@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
-import * as Yup from "yup";
 import { useDispatch } from "react-redux";
 import { userRegisterAction } from "../Redux/Actions/userAction";
 import { useNavigate } from "react-router-dom";
@@ -42,10 +41,10 @@ const RegisterUser = () => {
           }}
           render={({ errors, touched, setFieldValue }) => (
           <>
-            <h1 className="my-4 font-weight-bold-display-4">Sign Up</h1>
+            <h1 style={{color:'black',margin:'-10px 0 20px'}}>Sign Up</h1>
               <Form>
                 <div className="form-group col-md-6">
-                  <div >
+                  <div className="file">
                   <label htmlFor="file">File upload</label>
                   <input
                     name="image"
@@ -59,12 +58,12 @@ const RegisterUser = () => {
                       (errors.image && touched.image ? " is-invalid" : "")
                     }
                   />
-                  </div>
                   <ErrorMessage
                     name="image"
                     component="div"
                     className="invalid-feedback"
                   />
+                  </div>
 
                   <div className="file">
                   <label htmlFor="firstName">Name</label>
@@ -76,12 +75,12 @@ const RegisterUser = () => {
                       (errors.name && touched.name ? " is-invalid" : "")
                     }
                   />
-                  </div>
                   <ErrorMessage
                     name="name"
                     component="div"
                     className="invalid-feedback"
                   />
+                  </div>
                 </div>
                 <div className="form-group">
                   <label htmlFor="email">Email</label>
@@ -165,7 +164,7 @@ const RegisterUser = () => {
         />
       </div>
       <div className="col-md-6 my-auto">
-        <img className="img-fluid w-100" src={girlImg} alt=" " />
+        <img className="img-fluid w-100" style={{borderRadius:"1px"}} src={girlImg} alt=" " />
       </div>
       </div>
     </div>

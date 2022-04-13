@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Hubballi&family=Poppins:wght@200&family=Roboto:wght@300;500&family=Source+Sans+Pro&display=swap');
+
+
+.user_page{
+    font-family: 'Fredoka', sans-serif;  
+  }
+
+.user_details{
+  margin: 30px auto;
+}
+
+.user_card{
+  margin: 30px auto;
+}
+
+h1{
+  color:beige;
+}
+
+img{
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+
