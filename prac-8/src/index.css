@@ -50,6 +50,12 @@ nav{
  
 }
 
+.name{
+  width: 360px;
+  margin: 10px 0 0 -12px;
+ 
+}
+
 h1{
   color: black;
 }

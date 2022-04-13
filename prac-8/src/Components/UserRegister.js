@@ -41,11 +41,11 @@ const RegisterUser = () => {
           }}
           render={({ errors, touched, setFieldValue }) => (
           <>
-            <h1 style={{color:'black',margin:'-10px 0 20px'}}>Sign Up</h1>
+            <h1 style={{color:'black',margin:'-25px 0 -25px -200px'}}>Sign Up</h1>
               <Form>
                 <div className="form-group col-md-6">
                   <div className="file">
-                  <label htmlFor="file">File upload</label>
+                  <label htmlFor="file"></label>
                   <input
                     name="image"
                     type="file"
@@ -65,7 +65,7 @@ const RegisterUser = () => {
                   />
                   </div>
 
-                  <div className="file">
+                  <div className="name">
                   <label htmlFor="firstName">Name</label>
                   <Field
                     name="name"
@@ -150,7 +150,7 @@ const RegisterUser = () => {
                     className="invalid-feedback"
                   />
                 </div>
-                <div className="form-group">
+                <div className="form-group" style={{marginTop:'-20px'}}>
                   <button type="submit" className="btn btn-primary mt-3">
                     Register
                   </button>
