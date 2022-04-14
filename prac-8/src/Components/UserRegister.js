@@ -10,6 +10,12 @@ const RegisterUser = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  React.useEffect(() => {
+    if (localStorage.getItem('userInfo')) {
+      navigate('/home')
+    }
+  }, [navigate]) 
+  
   const handleSubmit = (values) => {
     dispatch(userRegisterAction(values));
     navigate("/home");
